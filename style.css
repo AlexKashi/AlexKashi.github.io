@@ -81,10 +81,11 @@ body{
 .main-description {
 	position: absolute;
 	color: #FFFFFF;
-	top: 25%;
+	top: 50%;
 	left: 33%;
-	font-size: 22px;
-    font-size: 1.4vw;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-size: 1.6vw;
 }
 .resume-with-background {
     position: relative;
