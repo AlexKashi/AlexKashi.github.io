@@ -85,22 +85,25 @@ body{
 	left: 33%;
 	font-size: 22px
 }
-.backgroundResume {
-    /* The image used */
-    background-image: "images/BackgroundResume.png";
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.resume-with-background {
+    position: relative;
+    text-align: center
+    top: 0;
+	left: 0;
+	width: 100%
 }
-.resume {
-	text-align: center
+
+
+.resume-with-background > p {
+	position: absolute;
+	top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color: #ffffff;
+	font-size: 20px;
 }
 .resume > p{
+
 	color: #ffffff;
 	padding: 10px 0 0px 0;
 	font-size: 20px;
@@ -112,8 +115,12 @@ body{
 .link:hover {
 	color: lightblue;
 }
-.resume > object{
-	text-align: center;
+.resume-with-background > object{
+	position: absolute;
+	top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+	color: #ffffff;
 	width: 1000px;
 	height: 1000px;
 }
