@@ -1,0 +1,119 @@
+html{
+	height: 100%;
+}
+body{
+    height: 100%;
+	margin : 0;
+	padding: 0;
+	font-family: 'Ariel', serif;
+}
+.nav {
+	background-color: #FFFFFF;
+	color: #000000;
+	list-style: none; 
+	text-align: right;
+	padding: 20px 0 0 0px;
+}
+.nav > li {
+	display: inline-block;
+	padding: 0 25px 0 25px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.nav > li > a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.nav > li > a:hover{
+	color: #c1c1c1;
+}
+
+.logo {
+	color: #000000;
+	float: left;
+	padding-left:25px;
+	padding-top: 20;
+	font-style: 16px;
+	font-weight: bold;
+}
+.logo > a {
+	text-decoration: none;
+	color: #000000;
+}
+.banner{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: block;
+}
+
+.banner >.banner-image{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: block;
+}
+
+.banner > .img-circle > a >img {
+	position: absolute;
+	width:auto;
+	height:80%;
+	top:10%;
+    right:3%;
+	display: block;
+	float: right;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+}
+
+
+.banner > .img-circle > a > img:hover {
+ 	opacity: 0.8;
+ 	height:82%;
+ 	top:9%;
+    right:2.75%;
+}
+.main-description {
+	position: absolute;
+	color: #FFFFFF;
+	top: 25%;
+	left: 33%;
+	font-size: 22px
+}
+.backgroundResume {
+    /* The image used */
+    background-image: url("images/BackgroundResume.png");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.resume {
+	text-align: center
+}
+.resume > p{
+	color: #ffffff;
+	padding: 10px 0 0px 0;
+	font-size: 20px;
+}
+.link {
+	color: white;
+}
+
+.link:hover {
+	color: lightblue;
+}
+.resume > object{
+	text-align: center;
+	width: 1000px;
+	height: 1000px;
+}
