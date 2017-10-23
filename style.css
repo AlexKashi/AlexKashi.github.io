@@ -83,7 +83,8 @@ body{
 	color: #FFFFFF;
 	top: 25%;
 	left: 33%;
-	font-size: 22px
+	font-size: 22px;
+    font-size: 1.4vw;
 }
 .resume-with-background {
     position: relative;
@@ -122,5 +123,16 @@ body{
     transform: translate(-50%, 0);
 	color: #ffffff;
 	width: 1000px;
-	height: 1000px;
+	height: 95%;
+}
+.resume-with-background > img {
+    width: 100%;
+    height: 100%;
+}
+.header-contact {
+    text-align: center;
+}
+
+.contact-form{
+   text-align: center; 
 }
