@@ -98,6 +98,32 @@ body{
     font-size: 22px;
     font-size: 1.6vw;
 }
+
+.flyco-header {
+	display: inline-block;
+	margin: 10px;
+}
+
+.main-content {
+	background-color: #DDDDDD;
+	position: absolute;
+	left: 50%; 
+	transform: translate(-50%, 0);
+	padding: 25px;
+	margin:0 auto;
+	width: 800px; 
+	height: 100%; 
+	border-radius: 15px;
+	border: 2px solid grey;
+}
+.main-content-link{
+	text-decoration: none;
+	color: black;
+}
+
+.main-content > h1 {
+	text-align: center;
+}
 .resume-with-background {
     position: relative;
     text-align: center
