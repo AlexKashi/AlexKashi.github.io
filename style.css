@@ -210,3 +210,32 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+.about-content {
+}
+.about-content > img {
+   width: 33.33333%;
+   position: absolute;
+   left: 0px;
+   border-radius: 15px;
+   border: 2px solid tan;
+}
+.about-content > .description-background {
+    background-color: #FFFFFF;
+    width: 66.6666%;
+	position: absolute;
+    border-radius: 15px;
+	border: 2px solid grey;
+    height: 100%;
+    right: -8px;
+
+}
+.about-content  > .description-background > h1 {
+    text-align:center;
+}
+
+.about-content  > .description-background > p {
+    text-indent: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+word-wrap: break-word;
+}
