@@ -8,22 +8,7 @@ body{
 	padding: 0;
 	font-family: 'Ariel', serif;
 }
-/* latin-ext */
-@font-face {
-  font-family: 'Chivo';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Chivo Black'), local('Chivo-Black'), url(https://fonts.gstatic.com/s/chivo/v9/nAXeHu_DIww40GQpG5oD3BTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Chivo';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Chivo Black'), local('Chivo-Black'), url(https://fonts.gstatic.com/s/chivo/v9/TX_hNweQrqAZr-ujaKg9pvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
+
 .nav {
     list-style-type: none;
     margin: 0;
@@ -31,6 +16,7 @@ body{
     overflow: hidden;
     background-color: #333;
     text-align: right;
+	font-family: 'Ariel', serif;
 }
 .nav > li {
 
@@ -112,6 +98,17 @@ body{
     font-size: 22px;
     font-size: 1.6vw;
 }
+.about-banner-description {
+	font-family: 'Ariel', serif;
+	position: absolute;
+	color: #FFFFFF;
+
+	top: 58%;
+	left: 38%;
+    transform: translate(-50%, -50%);
+
+    font-size: 2.0vw;
+}
 
 .flyco-header {
 	display: inline-block;
@@ -119,7 +116,8 @@ body{
 }
 
 .main-content {
-	background-color: #DDDDDD;
+
+    background-image: url("images/BackgroundAbout.png"); 
 	position: absolute;
 	left: 50%; 
 	transform: translate(-50%, 0);
@@ -225,7 +223,7 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 .about-content {
-    position:absolute
+    position:absolute;
 }
 .column {
     box-sizing: border-box;
@@ -235,12 +233,17 @@ input[type=submit]:hover {
     width: 33.33333%;
     }
 .left > img{
-    border-radius: 15px;
-    border: 2px solid tan;
+    outline: 2px solid tan;
+    max-width:100%;
+}
+
+.about-img {
+    outline: 2px solid tan;
 
     max-width:100%;
     max-height:100%;
    
+
 }
 .right{
     width: 66.66666%
@@ -251,30 +254,25 @@ input[type=submit]:hover {
     clear: both;
 }
 .about-content > .img1 {
-   width: 33.33333%;
+   width: 33%;
    left: 0px;
    position: absolute;
-   border-radius: 15px;
-   border: 2px solid tan;
+   outline: 2px solid tan;
 }
 .about-content > .img2 {
-   width: 33.33333%;
+   width: 33%;
    float: left;
    left: 0px;
-   border-radius: 15px;
-   border: 2px solid tan;
+   outline: 2px solid tan;
 }
 
  .description-background {
     background-color: #FFFFFF;
     width: 66.6666%;
 	position: absolute;
-    border-radius: 15px;
-	border: 2px solid grey;
-    
-    height:auto;
+	outline: 2px solid grey;
     min-height: 100%;
-    right: -8px;
+    height:auto;
     background-image: url("images/BackgroundAbout.png"); 
     font-family: 'Helvetica Neue', Helvetica, Arial, serif;
 
@@ -305,4 +303,17 @@ input[type=submit]:hover {
     padding-left: 25px;
     padding-right: 25px;
     word-wrap: break-word;
+}
+
+.cs294-content {
+    background-image: url("images/BackgroundAbout.png"); 
+	position: absolute;
+	left: 50%; 
+	transform: translate(-50%, 0);
+	padding: 25px;
+	margin:0 auto;
+	width: 800px; 
+	height: 100%; 
+	border-radius: 15px;
+	border: 2px solid grey;
 }

@@ -9,25 +9,27 @@
 	<ul class = "nav">
 		<li style="float:left;  font-style: 16px; font-weight: bold;"><a href="index.html">Alex Kashi</a></li>
 		<li><a href="index.html">Home</a></li>
-		<li><a class="active" href="about.html">About Me</a></li>
+        <li><a href="cs294.html">CS 294</a></li>
+		<li><a class="active" href="about.html">About</a></li>
 		<li><a href="resume.html">Resume</a></li>
 		<li><a href="contact.html">Contact</a></li>
 	</ul>
     <div class="banner">
-		<img class="banner-image" src="images/BannerThin.jpg">
+		<img class="banner-image" src="images/AboutBanner.jpg">
 		<div class = "img-circle">
 		</div>
-		<div class = "main-description">
+		<div class = "about-banner-description">
 			<h1>Alex Kashi</h1>
 			<h2>Hardware/Software Engineer and Researcher</h2>
 		</div>
 	</div>
-    <div class="about-content" background = "images/BackgroundAbout.png"> 
+    <div class="about-content">
         <div class = "row">
             <div class="column left">
-	            <img src="images/AboutPhoto.jpg"/>
-                <img src="images/GTM.jpg"/>
-            </div>
+	                <img src="images/AboutPhoto.jpg"/>
+
+                    <img src="images/GTM-Me.jpg" >
+                    </div>
             <div class="column right">
                 <div class="description-background">
                     <h1> About Alex </h1>
@@ -41,6 +43,24 @@
             </div>
         </div>
     </div>
-		
+	
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+
+
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "inline-block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 </body>
 </html>
