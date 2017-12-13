@@ -306,14 +306,55 @@ input[type=submit]:hover {
 }
 
 .cs294-content {
-    background-image: url("images/BackgroundAbout.png"); 
+    background-image: url("images/BackgroundAbout.png");
+
+    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
 	position: absolute;
 	left: 50%; 
 	transform: translate(-50%, 0);
 	padding: 25px;
 	margin:0 auto;
 	width: 800px; 
-	height: 100%; 
+    min-height: 100%;
+    height:auto;
 	border-radius: 15px;
 	border: 2px solid grey;
+}
+
+
+
+.cs294-content > h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #303030;
+    text-align:center;
+}
+.cs294-content > h2 {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1.3;
+    color: #777;
+    padding-left: 25px;
+    padding-right: 25px;
+    word-wrap: break-word;
+}
+.cs294-content > h2 > a {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1.3;
+    color: #777;
+    padding-left: 25px;
+    padding-right: 25px;
+    word-wrap: break-word;
+}
+.cs294-content > p {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.3;
+    color: #666;
+    text-indent: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    word-wrap: break-word;
 }
