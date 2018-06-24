@@ -28,6 +28,76 @@
         <p style = "text-indent: 50px;"> In this assignment we get acquainted with Tensorflow, OpenAI Gym, MuJoCo, and implement some basic learning algorithms. First we try behavioral cloning and notice that it works well in some simple cases, but seems to diverge when things get complex. This is because of the compounding error fomononan that occurs when you have no global feedback (similar to dead reckoning). As time goes on your observations get farther and farther away from the observations you trained on, meaning your classifier is less equipt to classify them correctly. When your training data is not from the same policy as your test data, we can say nothing about the test performance, even if the training performance is perfect. To remedy this issue we implement another algorithm DAgger, which allows us to get on policy data by having an expert produce actions for what the agent should have done, given the current observation in the test set. Then aggregate these observation, action pairs into the training data and retrain on the new dataset, and iterate. DAgger is useful in some cases but the fact that an expert (usually human) has to reclassify what the agent should have done, can be time consuming and expensive in the best case, and downright impossible in the worst. </p> 
     	<h3  style = "text-indent: 25px;"> Section 1. Getting started </h3>
         <p style = "text-indent: 50px;"> In this section we just install and and setup all the required frameworks. Since I am mainly developing on my gaming rig which runs Windows 10 I expectedly ran into some issues importing mujoco_py. The solution to the issue was found <a href="https://stackoverflow.com/questions/38766267/python-binding-for-mujoco-physics-library-using-mujoco-py-package"> here. </a> </p>
+
+        <h3  style = "text-indent: 25px;"> Section 2. Warmup </h3>
+        <p style = "text-indent: 50px;"> As my initial topology, I created a 4 layer policy network (2 hidden layers), with 400 hidden units in each layer. Using a training set of 40 rollouts the network did a good job of cloaning the behavior of the expert, although it still would experience hickups or divergance issues as timesteps got large. </p>
+        <img src="hopper.gif" alt="Computer Man" >
+        <img src="images/Behavioral Cloning (BC) Training Loss Hopper-v1 120 epochs.png">
+        <h3  style = "text-indent: 25px;"> Section 3. Behavioral Cloning </h3>
+
+        <table>
+          <tr>
+            <th>Expert</th>
+            <th>Mean Return</th>
+            <th>Std Dev of Return</th>
+            <th>Expert Mean Return</th>
+            <th>Std Dev of Expert's Return</th>
+          </tr>
+          <tr>
+            <td>Hopper-v1</td>
+            <td>2062.76</td>
+            <td>770.025</td>
+            <td>3777.94</td>
+            <td>3.468</td>
+          </tr>
+          <tr>
+            <td>Humanoid-v1</td>
+            <td>1020.37</td>
+            <td>573.42</td>
+            <td>10396.58</td>
+            <td>50.33</td>
+          </tr>
+          <tr>
+            <td>Reacher-v1</td>
+            <td>-4.6396</td>
+            <td>2.1412</td>
+            <td>-4.06</td>
+            <td>1.64</td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <th>Expert 60 epochs</th>
+            <th>Mean Return</th>
+            <th>Std Dev of Return</th>
+            <th>Expert Mean Return</th>
+            <th>Std Dev of Expert's Return</th>
+          </tr>
+          <tr>
+            <td>Hopper-v1</td>
+            <td>1772.56</td>
+            <td>531.78</td>
+            <td>3777.75</td>
+            <td>4.242</td>
+          </tr>
+          <tr>
+            <td>Humanoid-v1</td>
+            <td>3079</td>
+            <td>2522</td>
+            <td>10405</td>
+            <td>60.43</td>
+          </tr>
+          <tr>
+            <td>Reacher-v1</td>
+            <td>-5.495</td>
+            <td>1.95</td>
+            <td>-4.07</td>
+            <td>1.75</td>
+          </tr>
+        </table>
+
+
     </div>
 </body>
 </html>
