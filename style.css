@@ -223,7 +223,11 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 .about-content {
-    position:absolute;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+    width:auto;
 }
 .column {
     box-sizing: border-box;
@@ -246,7 +250,6 @@ input[type=submit]:hover {
 
 }
 .right{
-    width: 66.66666%
 }
 .row:after{
     content: "";
@@ -268,8 +271,8 @@ input[type=submit]:hover {
 
  .description-background {
     background-color: #FFFFFF;
-    width: 66.6666%;
 	position: absolute;
+    width: 100%;
 	outline: 2px solid grey;
     min-height: 100%;
     height:auto;
