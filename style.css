@@ -294,6 +294,12 @@ input[type=submit]:hover {
     padding-right: 25px;
     word-wrap: break-word;
 }
+.description-background > h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    word-wrap: break-word;
+}
 .description-background > p {
     font-size: 18px;
     font-weight: normal;
