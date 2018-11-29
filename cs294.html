@@ -30,7 +30,10 @@
         <p style = "text-indent: 50px;"> In this section we just install and and setup all the required frameworks. Since I am mainly developing on my gaming rig which runs Windows 10 I expectedly ran into some issues importing mujoco_py. The solution to the issue was found <a href="https://stackoverflow.com/questions/38766267/python-binding-for-mujoco-physics-library-using-mujoco-py-package"> here. </a> </p>
 
         <h3  style = "text-indent: 25px;"> Section 2. Warmup </h3>
-        <p style = "text-indent: 50px;"> As my initial topology, I created a 4 layer policy network (2 hidden layers), with 400 hidden units in each layer. Using a training set of 40 rollouts the network did a good job of cloaning the behavior of the expert, although it still would experience hickups or divergance issues as timesteps got large. </p>
+        <p style = "text-indent: 50px;"> 
+        
+            As my initial topology, I created a 4 layer policy network (2 hidden layers), with 400 hidden units in each layer. Using a training set of 40 rollouts the network did a good job of cloning the behavior of the expert, although it still would experience hiccups or divergence issues as timesteps got large.
+        </p>
         <center>
         <blockquote class="imgur-embed-pub" lang="en" data-id="a/ZF1B5lm" ><a href="//imgur.com/ZF1B5lm"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
         <img src="images/Behavioral Cloning (BC) Training Loss Hopper-v1 120 epochs.png">
